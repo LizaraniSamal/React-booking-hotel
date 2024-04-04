@@ -11,6 +11,9 @@
   margin: 20px 0px 100px 0px;
 
 } 
+.listMode{
+  margin: 20px 0px 0px 0px;
+}
 .headerList{
   display: flex;
   gap: 40px;
@@ -62,6 +65,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  z-index: 2;
 }
 .headerSearchInput{
   border: none;
@@ -71,11 +75,13 @@
 .headerSearchText{
   color: rgb(184, 171, 171);
   cursor: pointer;
+
 }
 
 .date{
   position: absolute;
   top: 50px;
+  z-index: 2;
 }
 
 .options{
