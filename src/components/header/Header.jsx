@@ -95,7 +95,10 @@ const Header = ({ type }) => {
                     className="headerIcon"
                   />
                   <span
-                    onClick={() => setOpenDate(!openDate)}
+                    onClick={() => {
+                      setOpenDate(!openDate);
+                      setOpenOption(false);
+                    }}
                     className="headerSearchText"
                   >{`${format(
                     dateRange[0].startDate,
@@ -107,7 +110,7 @@ const Header = ({ type }) => {
                       onChange={(item) => setDateRange([item.selection])}
                       moveRangeOnFirstSelection={false}
                       ranges={dateRange}
-                      className="date"
+                      className="dateRangePicker"
                     />
                   )}
                 </div>
@@ -118,6 +121,7 @@ const Header = ({ type }) => {
                     className="headerSearchText"
                     onClick={() => {
                       setOpenOption(!openOption);
+                      setOpenDate(false);
                     }}
                   >
                     {`${options.adult} adult .
@@ -196,7 +200,7 @@ const Header = ({ type }) => {
                 </div>
 
                 <div className="headerSearchItem">
-                  <button className="headerBtn">Search</button>
+                  <button className="headerBtn headerSearchBtn">Search</button>
                 </div>
               </div>
             </>

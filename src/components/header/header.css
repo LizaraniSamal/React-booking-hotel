@@ -15,12 +15,32 @@
   display: flex;
   gap: 40px;
   margin-bottom:50px ;
+  @media (max-width: 480px) {
+    gap: 30px;
+    margin-bottom: 28px;
+    padding: 10px 15px;
+    width: 350px;
+    overflow-x: auto;
+  }
 }
 .headerListItem{
   display: flex;
   align-items:center ;
   gap: 10px;
 }
+
+.headerTitle{
+  @media (max-width: 480px) {
+    padding: 0px 15px;
+  }
+}
+
+.headerListItem span{
+  @media (max-width: 480px) {
+    white-space: nowrap;
+  }
+}
+
 .headerListItem.active{
   border: 1px solid white;
   padding: 10px;
@@ -28,6 +48,9 @@
 }
 .headerDesc{
   margin: 20px 0;
+  @media (max-width: 480px) {
+    padding: 0px 15px;
+  }
 }
 .headerBtn{
   background-color: #0071c2;
@@ -36,6 +59,9 @@
   border: none;
   padding: 10px;
   cursor: pointer;
+  @media (max-width: 480px) {
+    margin: 0px 15px;
+  }
 }
 
 .headerSearch{
@@ -52,6 +78,17 @@
   max-width: 1024px;
   position: absolute;
   bottom: -25px;
+
+  @media (max-width: 480px){
+    display: grid;
+    width: 100%;
+    height: 200px;
+    margin-top: 2px;
+    max-width: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -140px;
+  }
 }
 
 .headerIcon{
@@ -71,11 +108,23 @@
 .headerSearchText{
   color: rgb(184, 171, 171);
   cursor: pointer;
+  font-size: 14px;
 }
 
-.date{
+.headerSearchBtn{
+  @media (max-width: 480px){
+    margin: 0 auto;
+  }
+}
+
+.dateRangePicker{
   position: absolute;
   top: 50px;
+  @media (max-width: 480px){
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .options{
@@ -85,6 +134,11 @@
   background-color: white;
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0,0,0,0.4);
+  @media (max-width: 480px){
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .optionItem{
