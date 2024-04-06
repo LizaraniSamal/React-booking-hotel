@@ -5,6 +5,10 @@
   justify-content: space-between;
   gap: 20px;
   z-index: 1;
+  @media (max-width: 480px) {
+    display: grid;
+    margin-top: 100px;
+  }
 }
 .featuredImg{
   width: 100%;
@@ -16,8 +20,15 @@
   border-radius: 10px;
   overflow: hidden;
   height: 250px;
+  @media (max-width: 480px){
+    height: 150px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .featuredTitles{
   position: absolute;
   bottom: 20px;
+   padding:0px 10px;
+  
 }

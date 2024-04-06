@@ -8,4 +8,9 @@
 .homeTitle{
   width: 1024px;
   font-size: 20px;
+  @media (max-width: 480px) {
+   width:100%;
+   padding: 0px 0px 0px 67px;
+  font-size:25px;
+  }
 }

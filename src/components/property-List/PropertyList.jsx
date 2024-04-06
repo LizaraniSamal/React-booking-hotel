@@ -52,7 +52,7 @@ const PropertyList = () => {
           </div>
         </div>
 
-        <div className="pListItem">
+        <div className="pListItems">
           <img
             src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg"
             alt=""
