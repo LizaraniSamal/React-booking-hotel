@@ -14,9 +14,14 @@ const Home = () => {
       <Header />
       <div className="homeContainer">
         <Featured />
-        <h1 className="homeTitle">Browse by property type</h1>
+        <div className="homeTitle">
+          <h1>Browse by property type</h1>
+        </div>
         <PropertyList />
-        <h1 className="homeTitle">Homes guests love</h1>
+        <div className="homeTitle">
+          <h1>Homes guests love</h1>
+        </div>
+       
         <FeaturedProperties />
         <MailList />
         <Footer />
