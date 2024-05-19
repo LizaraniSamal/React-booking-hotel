@@ -1,6 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import "./searchItem.css";
 
 const SearhItem = () => {
+  const navigate = useNavigate();
+  const onClickDetails = () => {
+    navigate("/hotels/123");
+  };
   return (
     <>
       <div className="searchItem">
@@ -34,7 +39,9 @@ const SearhItem = () => {
           <div className="siDetailTexts">
             <span className="siPrice"> $123</span>
             <span className="siTaxOp">Includes taxes and fees</span>
-            <button className="siCheckbutton">see availability</button>
+            <button className="siCheckbutton" onClick={onClickDetails}>
+              see availability
+            </button>
           </div>
         </div>
       </div>

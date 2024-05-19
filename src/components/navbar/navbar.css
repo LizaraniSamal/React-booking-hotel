@@ -19,6 +19,11 @@
   align-items: center;
   justify-content: space-between;
 }
+.navContainer a{
+  color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
 
 .logo{
   font-weight: 500;
@@ -30,4 +35,8 @@
   padding: 5px 10px;
   cursor: pointer;
   color: #003580;
+}
+.login{
+  margin: 0;
+  padding: 0;
 }

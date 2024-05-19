@@ -1,0 +1,91 @@
+.container{
+  width: 100%;
+  
+  height: 100vh;
+  background-image: url("https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+ .innerContainer{
+  width: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftContainer{
+    width: 40%;
+}
+
+.leftContainer h1{
+  
+  font-size: 48px;
+  font-weight: 700;
+  padding: 0 0 17px;
+  line-height: 1.04;
+  margin: 0;
+}
+
+.leftContainer  p{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  line-height: 1.56;
+  margin: 0;
+}
+
+.loginConatainer{
+    width: 50%;
+    background-color: white;
+    border: 2px solid #0071c2;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.loginConatainer h1{
+  font-size: 25px;
+  margin: 20px 10px;
+
+}
+
+.formInputContainer{
+  display: grid;
+}
+.inputField{
+  font-weight: bold;
+   width: 90%;
+   margin-bottom: 15px;
+   height: 35px;
+   padding: 6px 15px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   background: #F6F7F9;
+   color: #748194;
+   font-size: 20px;
+}
+
+.loginBtn{
+  font-weight: bold;
+   width: 100%;
+   margin-bottom: 10px;
+   height: 45px;
+   padding: 6px 15px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   background: #0071c2;
+   color: white;
+   font-size: 20px;
+}
+
+ 
+
+
+
+
+
+
+  
